@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Layout</string>
+    <string name="av_name">AviaZales</string>
+    <string name="fr_name">Откуда</string>
+    <string name="to_name">Куда</string>
+    <string name="data_name">Туда</string>
+    <string name="data_name2">Обратно</string>
+    <string name="pass">Пассажиры</string>
+    <string name="search">Поиск</string>
+    <string name="adult">Взрослые</string>
+    <string name="children">Дети</string>
+    <string name="babies">Младенцы</string>
+    <array name = "cities">
+        <item>Иркутск</item>
+        <item>Москва</item>
+        <item>Санкт-Петербург</item>
+        <item>Якутск</item>
+        <item>Барнаул</item>
+        <item>Тайшет</item>
+        <item>Улан-Удэ</item>
+        <item>Воронеж</item>
+        <item>Самара</item>
+        <item>Екатеринбург</item>
+        <item>Сочи</item>
+        <item>Красноярск</item>
+        <item>Великий Новгород</item>
+
+    </array>
+</resources>
