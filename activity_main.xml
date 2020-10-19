@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorSpinner"
+        android:entries="@array/cities"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="@color/colorSpinner"
+        android:entries="@array/cities"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/av_name"
+        android:textColor="@color/textViewColor"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/from"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="22dp"
+        android:text="@string/fr_name"
+
+        app:layout_constraintEnd_toStartOf="@+id/spinner2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="22dp"
+        android:text="@string/to_name"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="22dp"
+        android:text="@string/data_name2"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+    <EditText
+        android:id="@+id/editTextDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="52dp"
+        android:background="@color/colorSpinner"
+        android:ems="10"
+        android:entries="@array/cities"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextDate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="52dp"
+        android:background="@color/colorSpinner"
+        android:ems="10"
+        android:entries="@array/cities"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="22dp"
+        android:text="@string/data_name"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:width="100dp">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Count"
+            android:layout_marginStart="160dp"
+
+            android:text="@string/search" />
+
+        <TextView
+            android:id="@+id/Pass"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="300dp"
+            android:text="@string/pass"
+            style="@style/pas"
+            android:textColor="@color/black"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/Adult"
+            android:text="@string/adult"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            style="@style/from"
+            android:layout_below="@id/Pass"
+            android:layout_alignStart="@id/Pass"
+
+            />
+
+        <TextView
+            android:id="@+id/Child"
+            android:text="@string/children"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            style="@style/from"
+            android:layout_below="@id/Adult"
+            android:layout_alignStart="@id/Pass"/>
+
+        <TextView
+            android:id="@+id/Babies"
+            android:text="@string/babies"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            style="@style/from"
+            android:layout_below="@id/Child"
+            android:layout_alignStart="@id/Pass"/>
+
+        <EditText
+        android:id="@+id/Count"
+        android:layout_width="50dp"
+
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+
+
+        android:layout_toEndOf="@id/Babies"
+
+            android:layout_alignTop="@id/Babies"
+
+        />
+
+        <EditText
+            android:id="@+id/Count2"
+            android:layout_width="50dp"
+
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+
+
+            android:layout_above="@id/Count"
+            android:layout_alignEnd="@id/Count"
+            android:layout_alignTop="@id/Child"
+
+            />
+        <EditText
+            android:id="@+id/Count3"
+            android:layout_width="50dp"
+
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+
+
+            android:layout_above="@id/Count2"
+            android:layout_alignEnd="@id/Count"
+
+            />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
